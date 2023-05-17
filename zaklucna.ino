@@ -1,3 +1,4 @@
+//zaključna naloga za maturo zelo simple IoT projekt na esp32
 #include <WiFi.h>
 #include <Wire.h>
 #include "DHT.h"
@@ -12,14 +13,14 @@ uint8_t DHTPin = 4;
 DHT dht(DHTPin, DHTTYPE);// inicializacija za dht
 float Temperature;
 float Humidity;
-const char* ssid = "linksys"; // ime
+const char* ssid = ""; // ime
 const char* password = ""; //geslo
 WiFiServer server(60105); // port
-IPAddress local_IP(192,168,1,130); //ip za dostop je 93.103.218.133:60105
-IPAddress gateway(192,168,1,1);//prehod
+IPAddress local_IP(); //ip za dostop je 
+IPAddress gateway();//prehod
 IPAddress subnet(255, 255, 255, 0);
-IPAddress primaryDNS(84,255,209,79); 
-IPAddress secondaryDNS(84,255,210,79);
+IPAddress primaryDNS(); 
+IPAddress secondaryDNS();
 
 void setup() {
 Serial.begin(115200);
