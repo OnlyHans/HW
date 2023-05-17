@@ -1,3 +1,9 @@
+/* Podani so trije ASCII znakovni nizi: NIZ, SEZNAM1 in SEZNAM2. V zbirniku za procesor ARM napišite program, 
+ki vse male črke znakovnega niza NIZ zamenja na sledeč način.
+ Če je majhna črka niza NIZ v znakovnem nizu SEZNAM1 jo zamenjaj z istoležno veliko črko niza SEZNAM2.
+Če je vsebina niza SEZNAM1 "abc" in je vsebina niza SEZNAM2 "xyz" moramo vsak znak "a" v nizu NIZ zamenjati z veliko črko "X",
+ vsak znak "b" moramo zamenjati z veliko črko "Y" in vsak znak "c" z veliko črko "Z".
+ Predpostavite lahko, da sta niza SEZNAM1 in SEZNAM2 enake dolžine ter, da vsebujeta samo male črke. *\
 .text
 
 NIZ1:              .asciz "yxem Nx yzcdxo, am knxfx Vcjs, Gbnnws rx ejnm nj Zxcj."    
